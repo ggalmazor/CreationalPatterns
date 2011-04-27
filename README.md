@@ -15,7 +15,7 @@ __Singleton__
 Y por supuesto:
 
 ```php
-$objeto = new Clase();
+<?php $objeto = new Clase(); ?>
 ```
 
 ... que está presente en todo el código :)
