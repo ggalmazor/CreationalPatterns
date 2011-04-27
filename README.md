@@ -4,13 +4,13 @@ Un proyecto muy serio sobre Patrones de Diseño en PHP5
 
 ## Listado de Patrones
 
-__Abstract Factory__
-__Builder__
-__Factory Method__
-__Lazy Initialization__
-__Object Pool__
-__Prototype__
-__Singleton__
++ __Abstract Factory__
++ __Builder__
++ __Factory Method__
++ __Lazy Initialization__
++ __Object Pool__
++ __Prototype__
++ __Singleton__
 
 Y por supuesto:
 
