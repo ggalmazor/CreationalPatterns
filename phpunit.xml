@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<phpunit backupGlobals="false"
+         backupStaticAttributes="false"
+         colors="true"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         processIsolation="false"
+         stopOnFailure="false"
+         syntaxCheck="true"
+         bootstrap="./tests/bootstrap.php"
+>
+  <testsuites>
+    <testsuite name="Creational Patterns test suite">
+      <file>./tests/CreationalPatterns/AbstractFactoryTests.php</file>
+      <file>./tests/CreationalPatterns/BuilderTests.php</file>
+      <file>./tests/CreationalPatterns/FactoryMethodTests.php</file>
+      <file>./tests/CreationalPatterns/LazyInitializationTests.php</file>
+      <file>./tests/CreationalPatterns/ObjectPoolTests.php</file>
+      <file>./tests/CreationalPatterns/PrototypeTests.php</file>
+      <file>./tests/CreationalPatterns/SingletonTests.php</file>
+    </testsuite>
+  </testsuites>
+</phpunit>
