@@ -14,7 +14,7 @@ __Singleton__
 
 Y por supuesto:
 
-``` php
+```php
 $objeto = new Clase();
 ```
 
