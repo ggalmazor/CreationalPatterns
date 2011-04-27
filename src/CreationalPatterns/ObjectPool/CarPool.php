@@ -15,18 +15,21 @@ class CarPool {
     }
   }
 
-  public function useCar($driver) {
-    $car = $this->getAFreeCar();
-    if (!($car instanceof Car)) {
+  public function claimCar($driver) {
+    if (!$this->areFreeCars())
       throw new \Exception("There is no free car for $driver");
-    }
+    $car = $this->getAFreeCar();
     $car->driver = $driver;
     return $car;
   }
-
+  
   public function releaseCar(Car $car) {
     $car->driver = null;
     return $this;
+  }
+  
+  public function areFreeCars() {
+    return count($this->getFreeCars()) > 0;
   }
 
   private function getAFreeCar() {
@@ -35,7 +38,7 @@ class CarPool {
 
   private function getFreeCars() {
     $freeCars = array_filter($this->cars, function($car) {
-          return $car->driver == null;
+          return $car->isEmpty();
         });
     return $freeCars;
   }

@@ -10,5 +10,9 @@ class Car {
   public function __construct() {
     $this->uid = sha1(uniqid());
   }
+  
+  public function isEmpty() {
+    return $this->driver == null;
+  }
 
 }
