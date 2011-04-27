@@ -13,8 +13,9 @@ __Prototype__
 __Singleton__
 
 Y por supuesto:
-
-    $objeto = new Clase();
+``` php
+$objeto = new Clase();
+```
 
 ... que está presente en todo el código :)
 
