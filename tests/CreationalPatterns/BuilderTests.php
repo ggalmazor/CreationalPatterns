@@ -13,14 +13,14 @@ class BuilderTests extends PHPUnit_Framework_TestCase {
   }
 
   public function testHawaiianPizzaShouldHaveProperIngredients() {
-    $pizza = $this->cook->setPizzaBuilder(new HawaiianPizzaBuilder())->constructPizza()->getPizza();
+    $pizza = $this->cook->setPizzaBuilder(new HawaiianPizzaBuilder())->getPizza();
     $this->assertEquals('cross', $pizza->getDough());
     $this->assertEquals('mild', $pizza->getSauce());
     $this->assertEquals('ham+pineapple', $pizza->getTopping());
   }
 
   public function testSpicyPizzaShouldHaveProperIngredients() {
-    $pizza = $this->cook->setPizzaBuilder(new SpicyPizzaBuilder())->constructPizza()->getPizza();
+    $pizza = $this->cook->setPizzaBuilder(new SpicyPizzaBuilder())->getPizza();
     $this->assertEquals('pan baked', $pizza->getDough());
     $this->assertEquals('hot', $pizza->getSauce());
     $this->assertEquals('pepperoni+salami', $pizza->getTopping());

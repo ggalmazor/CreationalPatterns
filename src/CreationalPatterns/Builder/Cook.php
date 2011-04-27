@@ -11,16 +11,17 @@ class Cook {
     return $this;
   }
 
-  public function constructPizza() {
+  public function getPizza() {
+    $this->constructPizza();
+    return $this->pizzaBuilder->getPizza();
+  }
+  
+  private function constructPizza() {
     $this->pizzaBuilder->createNewPizzaProduct();
     $this->pizzaBuilder->buildDough();
     $this->pizzaBuilder->buildSauce();
     $this->pizzaBuilder->buildTopping();
     return $this;
-  }
-
-  public function getPizza() {
-    return $this->pizzaBuilder->getPizza();
   }
 
 }
