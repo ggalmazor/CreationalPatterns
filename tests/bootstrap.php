@@ -22,7 +22,8 @@ require 'src/CreationalPatterns/LazyInitialization/Fruit.php';
 
 require 'src/CreationalPatterns/ObjectPool/CarPool.php';
 
-require 'src/CreationalPatterns/Prototype/DiePrototype.php';
-require 'src/CreationalPatterns/Prototype/DieImplementation.php';
+require 'src/CreationalPatterns/Prototype/ClonableDado.php';
+require 'src/CreationalPatterns/Prototype/Dado.php';
+require 'src/CreationalPatterns/Prototype/PrototypeCloner.php';
 
 require 'src/CreationalPatterns/Singleton/Mother.php';
