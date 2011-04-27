@@ -13,6 +13,7 @@ __Prototype__
 __Singleton__
 
 Y por supuesto:
+
 ``` php
 $objeto = new Clase();
 ```
